@@ -34,12 +34,32 @@ Our evaluation demonstrates that `AFGNN` outperforms state-of-the-art LLMs and o
 
 ## Dataset
 
-* **Code-Kernal_Relabelled**
-As mentioned in the paper, we have relabelled the Code-Kernel data for the clustering evaluation (RQ1 task), and that data is available under the `./Dataset/Code-Kernel-Relabelled/after_relabelling` folder. To utilize the data, we need to preprocess it (using `./Dataset/Code-Kernel-Relabelled/preprocessing.py`), generate AFGs (using `./Code/AFG-Generator/COMP_project/src/main/java/pdg_gui/mainframe.java`) and prune the AFGs (using `./Code/AFG-Pruning`). Finally, the generated AFGs can be used for evaluation with AFGNN against the baselines using the `./Code/Evaluation-Scripts/test-with-codekernel-relabeled-clustering-data.ipynb` script.
+### Code-Kernel_Relabelled
 
-* **MuBench:**
-Due to the dataset’s age (six years old), some project repositories were inaccessible, limiting our access to misuse examples. We collected all correct usage examples, available misuse examples, and YML files, and generated the unavailable misuse examples based on the YML information. The `mubench_java_file_downloader.py` script is provided to prepare the MuBench dataset. Before executing the script, update the `root_folder` variable on **line 57** with the path to the cloned MuBENCH repository (`root_folder = './API_Misuse/MUBench'`) and `output_folder` variable. We also provide the prepared dataset which can be found in the `MuBench_processed_dataset` folder, and which can be used directly for experiments. Finally, follow the folder structure specified in the path statements of the `test-with-MuBench-examples-with-AFGNN.ipynb` notebook to arrange the collected Java files. Follow the same AFG generation process explained before. Finally, the generated AFGs can be used for misuse detection evaluation with AFGNN (`./Code/Evaluation-Scripts/test-with-MuBench-examples-with-AFGNN.ipynb`) and GraphCodeBERT (`./Code/Evaluation-Scripts/test-with-MuBench-examples-with-GraphCodeBERT.ipynb`).
+As mentioned in the paper, we have relabelled the Code-Kernel data for the clustering evaluation (RQ1 task), and that data is available under the `./Dataset/Code-Kernel-Relabelled/after_relabelling` folder.
 
+To utilize the data, we need to:
+1. Preprocess it using `./Dataset/Code-Kernel-Relabelled/preprocessing.py`
+2. Generate AFGs using `./Code/AFG-Generator/COMP_project/src/main/java/pdg_gui/mainframe.java`
+3. Prune the AFGs using `./Code/AFG-Pruning/afg_pruning.py`
+
+Finally, the generated AFGs can be used for evaluation with AFGNN against the baselines using the `./Code/Evaluation-Scripts/test-with-codekernel-relabeled-clustering-data.ipynb` script.
+
+---
+
+### MuBench
+
+Due to the dataset's age (six years old), some project repositories were inaccessible, limiting our access to misuse examples. We collected all correct usage examples, available misuse examples, and YML files, and generated the unavailable misuse examples based on the YML information.
+
+The `mubench_java_file_downloader.py` script is provided to prepare the MuBench dataset. Before executing the script, update:
+- `root_folder` variable on **line 57** → `root_folder = './API_Misuse/MUBench'`
+- `output_folder` variable → set to your desired output path
+
+We also provide the prepared dataset in the `MuBench_processed_dataset` folder, which can be used directly for experiments. Follow the folder structure specified in the path statements of the `test-with-MuBench-examples-with-AFGNN.ipynb` notebook to arrange the collected Java files. Follow the same AFG generation process explained above.
+
+Finally, the generated AFGs can be used for misuse detection evaluation with:
+- AFGNN → `./Code/Evaluation-Scripts/test-with-MuBench-examples-with-AFGNN.ipynb`
+- GraphCodeBERT → `./Code/Evaluation-Scripts/test-with-MuBench-examples-with-GraphCodeBERT.ipynb`
 
 ## Usage Instructions
 
