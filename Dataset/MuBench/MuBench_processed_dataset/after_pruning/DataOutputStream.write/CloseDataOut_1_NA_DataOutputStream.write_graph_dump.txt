@@ -1,0 +1,8 @@
+Line_3 $$ ByteArrayOutputStream out = new ByteArrayOutputStream(); --> Line_4 $$ DataOutputStream dataOut = new DataOutputStream(out); [FD]
+Line_4 $$ DataOutputStream dataOut = new DataOutputStream(out); --> Line_5 $$ dataOut.writeLong(ssc); [FD]
+Line_2 $$ void pattern(byte[] rapdu, long ssc) throws IOException { --> Line_5 $$ dataOut.writeLong(ssc); [FD]
+Line_2 $$ void pattern(byte[] rapdu, long ssc) throws IOException { --> Line_6 $$ byte[] paddedData = Util.pad(rapdu, 0, rapdu.length - 2 - 8 - 2); [FD]
+Line_2 $$ void pattern(byte[] rapdu, long ssc) throws IOException { --> Line_7 $$ dataOut.write(paddedData, 0, paddedData.length); [CD]
+Line_5 $$ dataOut.writeLong(ssc); --> Line_7 $$ dataOut.write(paddedData, 0, paddedData.length); [SE]
+Line_4 $$ DataOutputStream dataOut = new DataOutputStream(out); --> Line_7 $$ dataOut.write(paddedData, 0, paddedData.length); [FD]
+Line_6 $$ byte[] paddedData = Util.pad(rapdu, 0, rapdu.length - 2 - 8 - 2); --> Line_7 $$ dataOut.write(paddedData, 0, paddedData.length); [FD]

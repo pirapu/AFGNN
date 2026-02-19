@@ -1,0 +1,3 @@
+Line_2 $$ void pattern(StatisticalCategoryDataset dataset, int row, int column) { --> Line_3 $$ Number n = dataset.getStdDevValue(row, column); [FD]
+Line_2 $$ void pattern(StatisticalCategoryDataset dataset, int row, int column) { --> Line_4 $$ n.doubleValue(); [CD]
+Line_3 $$ Number n = dataset.getStdDevValue(row, column); --> Line_4 $$ n.doubleValue(); [FD]

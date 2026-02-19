@@ -1,0 +1,4 @@
+Line_2 $$ String pattern(JsonElement d) { --> Line_3 $$ if (!d.isJsonNull()) [FD]
+Line_3 $$ if (!d.isJsonNull()) --> Line_4 $$ return d.getAsString(); [SE]
+Line_3 $$ if (!d.isJsonNull()) --> Line_4 $$ return d.getAsString(); [CD]
+Line_2 $$ String pattern(JsonElement d) { --> Line_4 $$ return d.getAsString(); [FD]

@@ -1,0 +1,4 @@
+Line_3 $$ JFrame f = new JFrame("Main Window"); --> Line_4 $$ f.pack(); [FD]
+Line_2 $$ public static void main(String[] args) { --> Line_5 $$ f.setVisible(true); [CD]
+Line_4 $$ f.pack(); --> Line_5 $$ f.setVisible(true); [SE]
+Line_3 $$ JFrame f = new JFrame("Main Window"); --> Line_5 $$ f.setVisible(true); [FD]

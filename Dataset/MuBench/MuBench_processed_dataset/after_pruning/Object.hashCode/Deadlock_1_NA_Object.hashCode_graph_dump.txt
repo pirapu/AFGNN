@@ -1,0 +1,3 @@
+Line_2 $$ public void misuse(Object o) { --> Line_4 $$ o.hashCode(); [FD]
+Line_4 $$ o.hashCode(); --> Line_6 $$ o.hashCode(); [SE]
+Line_2 $$ public void misuse(Object o) { --> Line_6 $$ o.hashCode(); [FD]

@@ -1,0 +1,4 @@
+Line_2 $$ Object size(List<Object> l, int i) { --> Line_3 $$ if (0 <= i && i < l.size()) { [FD]
+Line_3 $$ if (0 <= i && i < l.size()) { --> Line_4 $$ return l.get(i); [SE]
+Line_3 $$ if (0 <= i && i < l.size()) { --> Line_4 $$ return l.get(i); [CD]
+Line_2 $$ Object size(List<Object> l, int i) { --> Line_4 $$ return l.get(i); [FD]

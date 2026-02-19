@@ -1,0 +1,1 @@
+Line_3 $$ try { --> Line_4 $$ return Environment.getExternalStorageState(); [CD]

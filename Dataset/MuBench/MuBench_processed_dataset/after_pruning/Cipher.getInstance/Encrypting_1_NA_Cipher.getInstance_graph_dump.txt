@@ -1,0 +1,5 @@
+Line_2 $$ public static byte[] encryptWithKey(byte[] content) throws Exception { --> Line_4 $$ Cipher c = Cipher.getInstance(); [CD]
+Line_4 $$ Cipher c = Cipher.getInstance(); --> Line_5 $$ c.init(Cipher.ENCRYPT_MODE, keySpec); [FD]
+Line_5 $$ c.init(Cipher.ENCRYPT_MODE, keySpec); --> Line_6 $$ return c.doFinal(content); [SE]
+Line_4 $$ Cipher c = Cipher.getInstance(); --> Line_6 $$ return c.doFinal(content); [FD]
+Line_2 $$ public static byte[] encryptWithKey(byte[] content) throws Exception { --> Line_6 $$ return c.doFinal(content); [FD]

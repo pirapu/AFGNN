@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(HttpMethod method) throws AuthenticationException { --> Line_3 $$ AuthState authstate = method.getProxyAuthState(); [FD]
+Line_2 $$ void pattern(HttpMethod method) throws AuthenticationException { --> Line_4 $$ authstate.invalidate(); [CD]
+Line_3 $$ AuthState authstate = method.getProxyAuthState(); --> Line_4 $$ authstate.invalidate(); [FD]
+Line_4 $$ authstate.invalidate(); --> Line_5 $$ authstate.setAuthRequested(true); [SE]
+Line_3 $$ AuthState authstate = method.getProxyAuthState(); --> Line_5 $$ authstate.setAuthRequested(true); [FD]

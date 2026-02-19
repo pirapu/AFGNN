@@ -1,0 +1,6 @@
+Line_2 $$ public void pattern(byte[] content) throws IOException { --> Line_3 $$ ByteBuffer buffer = ByteBuffer.allocate(content.length); [FD]
+Line_3 $$ ByteBuffer buffer = ByteBuffer.allocate(content.length); --> Line_4 $$ buffer.put(content); [FD]
+Line_2 $$ public void pattern(byte[] content) throws IOException { --> Line_4 $$ buffer.put(content); [FD]
+Line_2 $$ public void pattern(byte[] content) throws IOException { --> Line_5 $$ buffer.get(); [CD]
+Line_4 $$ buffer.put(content); --> Line_5 $$ buffer.get(); [SE]
+Line_3 $$ ByteBuffer buffer = ByteBuffer.allocate(content.length); --> Line_5 $$ buffer.get(); [FD]

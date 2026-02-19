@@ -1,0 +1,4 @@
+Line_3 $$ Path path = new File("foo").toPath(); --> Line_4 $$ FileChannel out = FileChannel.open(path, StandardOpenOption.WRITE); [FD]
+Line_2 $$ public void needsFlushToEnsureWrite(ByteBuffer content) throws IOException { --> Line_5 $$ out.write(content); [CD]
+Line_2 $$ public void needsFlushToEnsureWrite(ByteBuffer content) throws IOException { --> Line_5 $$ out.write(content); [FD]
+Line_4 $$ FileChannel out = FileChannel.open(path, StandardOpenOption.WRITE); --> Line_5 $$ out.write(content); [FD]

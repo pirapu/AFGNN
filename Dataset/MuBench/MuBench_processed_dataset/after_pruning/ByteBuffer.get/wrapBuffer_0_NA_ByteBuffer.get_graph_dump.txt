@@ -1,0 +1,3 @@
+Line_2 $$ public void pattern(byte[] content) throws IOException { --> Line_3 $$ ByteBuffer buffer = new ByteBuffer(content); [FD]
+Line_2 $$ public void pattern(byte[] content) throws IOException { --> Line_4 $$ buffer.get(); [CD]
+Line_3 $$ ByteBuffer buffer = new ByteBuffer(content); --> Line_4 $$ buffer.get(); [FD]

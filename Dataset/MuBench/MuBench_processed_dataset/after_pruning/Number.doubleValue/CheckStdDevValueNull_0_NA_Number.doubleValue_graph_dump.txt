@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(StatisticalCategoryDataset dataset, int row, int column) { --> Line_3 $$ Number n = dataset.getStdDevValue(row, column); [FD]
+Line_3 $$ Number n = dataset.getStdDevValue(row, column); --> Line_4 $$ if (n != null) { [FD]
+Line_4 $$ if (n != null) { --> Line_5 $$ n.doubleValue(); [CD]
+Line_3 $$ Number n = dataset.getStdDevValue(row, column); --> Line_5 $$ n.doubleValue(); [FD]

@@ -1,0 +1,7 @@
+Line_2 $$ public void needsFlipToCopyWhatWasWritten(byte[] result) throws IOException { --> Line_3 $$ ByteBuffer buffer = ByteBuffer.allocate(result.length); [FD]
+Line_5 $$ Path fp = FileSystems.getDefault().getPath("output.file"); --> Line_6 $$ FileChannel outChannel = FileChannel.open(fp, EnumSet.of(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)); [FD]
+Line_2 $$ public void needsFlipToCopyWhatWasWritten(byte[] result) throws IOException { --> Line_10 $$ outChannel.write(buffer); [CD]
+Line_6 $$ FileChannel outChannel = FileChannel.open(fp, EnumSet.of(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)); --> Line_10 $$ outChannel.write(buffer); [FD]
+Line_3 $$ ByteBuffer buffer = ByteBuffer.allocate(result.length); --> Line_10 $$ outChannel.write(buffer); [FD]
+Line_10 $$ outChannel.write(buffer); --> Line_11 $$ outChannel.force(false); [SE]
+Line_6 $$ FileChannel outChannel = FileChannel.open(fp, EnumSet.of(StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)); --> Line_11 $$ outChannel.force(false); [FD]

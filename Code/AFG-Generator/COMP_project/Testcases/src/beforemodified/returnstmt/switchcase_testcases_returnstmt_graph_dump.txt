@@ -1,0 +1,3 @@
+Line_0 $$ Entry-->Line_1 $$ public class switchcase [ CD ]
+Line_1 $$ public class switchcase -->Line_2 $$ public String main(int a, int b) [ CD ]
+Line_2 $$ public String main(int a, int b) -->Line_3 $$ int c = 0[ CD ]

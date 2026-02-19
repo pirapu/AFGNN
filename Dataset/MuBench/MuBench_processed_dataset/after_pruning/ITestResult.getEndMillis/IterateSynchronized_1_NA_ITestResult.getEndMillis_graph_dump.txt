@@ -1,0 +1,3 @@
+Line_3 $$ for (ITestResult tr : syncL) { --> Line_4 $$ long elapsedTimeMillis = tr.getEndMillis() - tr.getStartMillis(); [FD]
+Line_4 $$ long elapsedTimeMillis = tr.getEndMillis() - tr.getStartMillis(); --> Line_5 $$ String name = tr.getMethod().isTest() ? tr.getName() : Utils.detailedMethodName(tr.getMethod(), false); [SE]
+Line_3 $$ for (ITestResult tr : syncL) { --> Line_5 $$ String name = tr.getMethod().isTest() ? tr.getName() : Utils.detailedMethodName(tr.getMethod(), false); [FD]

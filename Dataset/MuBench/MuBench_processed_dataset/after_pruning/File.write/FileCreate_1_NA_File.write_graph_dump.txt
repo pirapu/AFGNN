@@ -1,0 +1,2 @@
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException { --> Line_3 $$ Files.write(path, content); [CD]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException { --> Line_3 $$ Files.write(path, content); [FD]

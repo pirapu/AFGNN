@@ -1,0 +1,2 @@
+Line_2 $$ void mapMayContainNull(Map<String, Object> m) { --> Line_3 $$ if (m.put("foo", new Object()) != null) { [CD]
+Line_2 $$ void mapMayContainNull(Map<String, Object> m) { --> Line_3 $$ if (m.put("foo", new Object()) != null) { [FD]

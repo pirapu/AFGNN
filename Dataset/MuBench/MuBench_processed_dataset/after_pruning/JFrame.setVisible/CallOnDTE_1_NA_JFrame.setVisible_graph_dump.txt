@@ -1,0 +1,2 @@
+Line_2 $$ public static void main(String[] args) { --> Line_4 $$ f.setVisible(true); [CD]
+Line_3 $$ JFrame f = new JFrame("Main Window"); --> Line_4 $$ f.setVisible(true); [FD]

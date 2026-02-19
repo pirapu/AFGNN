@@ -1,0 +1,7 @@
+Line_0 $$ Entry-->Line_1 $$ public class example_1 {[ CD ]
+Line_1 $$ public class example_1 {-->Line_2 $$ public static void main(String[] args) {[ CD ]
+Line_2 $$ public static void main(String[] args) {-->Line_3 $$ int x = 5;[ CD ]
+Line_2 $$ public static void main(String[] args) {-->Line_4 $$ assert x > 0;[ CD ]
+Line_3 $$ int x = 5;-->Line_4 $$ assert x > 0;[ FD ]
+Line_4 $$ assert x > 0;-->Line_4 $$ assert x > 0;[ CD ]
+Line_3 $$ int x = 5;-->Line_4 $$ assert x > 0;[ FD ]

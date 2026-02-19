@@ -1,0 +1,3 @@
+Line_3 $$ NodeEntry parent = getHierarchyEntry().getParent(); --> Line_4 $$ if (parent != null) { [FD]
+Line_4 $$ if (parent != null) { --> Line_5 $$ parent.getNodeState(); [CD]
+Line_3 $$ NodeEntry parent = getHierarchyEntry().getParent(); --> Line_5 $$ parent.getNodeState(); [FD]

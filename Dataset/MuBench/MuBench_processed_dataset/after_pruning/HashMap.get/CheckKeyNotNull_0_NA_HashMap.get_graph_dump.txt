@@ -1,0 +1,3 @@
+Line_2 $$ public Object pattern(HashMap<String, Object> m, String key) { --> Line_3 $$ if (key != null) { [FD]
+Line_3 $$ if (key != null) { --> Line_4 $$ return m.get(key); [CD]
+Line_2 $$ public Object pattern(HashMap<String, Object> m, String key) { --> Line_4 $$ return m.get(key); [FD]

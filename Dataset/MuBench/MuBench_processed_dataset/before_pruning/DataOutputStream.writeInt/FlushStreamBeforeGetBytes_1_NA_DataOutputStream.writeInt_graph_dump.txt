@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ void pattern(OutputStream out) throws IOException {[ CD ]
+Line_2 $$ void pattern(OutputStream out) throws IOException {-->Line_2 $$ IOException[ CD ]
+Line_2 $$ void pattern(OutputStream out) throws IOException {-->Line_3 $$ DataOutputStream dout = new DataOutputStream(out);[ CD ]
+Line_2 $$ void pattern(OutputStream out) throws IOException {-->Line_3 $$ DataOutputStream dout = new DataOutputStream(out);[ FD ]
+Line_2 $$ void pattern(OutputStream out) throws IOException {-->Line_4 $$ dout.writeInt(0);[ CD ]
+Line_3 $$ DataOutputStream dout = new DataOutputStream(out);-->Line_4 $$ dout.writeInt(0);[ FD ]
+Line_3 $$ DataOutputStream dout = new DataOutputStream(out);-->Line_4 $$ dout.writeInt(0);[ FD ]

@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(Cipher cipher, PublicKey pubkey, MessageDigest digest, byte[] data) throws GeneralSecurityException { --> Line_3 $$ cipher.init(Cipher.ENCRYPT_MODE, pubkey); [CD]
+Line_2 $$ void pattern(Cipher cipher, PublicKey pubkey, MessageDigest digest, byte[] data) throws GeneralSecurityException { --> Line_3 $$ cipher.init(Cipher.ENCRYPT_MODE, pubkey); [FD]
+Line_3 $$ cipher.init(Cipher.ENCRYPT_MODE, pubkey); --> Line_5 $$ byte[] plaintext = cipher.doFinal(data); [SE]
+Line_2 $$ void pattern(Cipher cipher, PublicKey pubkey, MessageDigest digest, byte[] data) throws GeneralSecurityException { --> Line_5 $$ byte[] plaintext = cipher.doFinal(data); [FD]
+Line_5 $$ byte[] plaintext = cipher.doFinal(data); --> Line_6 $$ Util.recoverMessage(digestLength, plaintext); [FD]

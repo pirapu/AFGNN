@@ -1,0 +1,4 @@
+Line_2 $$ String pattern(StringTokenizer st) { --> Line_3 $$ if (st.countTokens() < 1) { [FD]
+Line_2 $$ String pattern(StringTokenizer st) { --> Line_6 $$ return st.nextToken(); [CD]
+Line_2 $$ String pattern(StringTokenizer st) { --> Line_6 $$ return st.nextToken(); [FD]
+Line_3 $$ if (st.countTokens() < 1) { --> Line_6 $$ return st.nextToken(); [SE]

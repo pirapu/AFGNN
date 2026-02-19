@@ -1,0 +1,3 @@
+Line_2 $$ public void pattern(Target target) { --> Line_4 $$ data = target.loadData(); [CD]
+Line_2 $$ public void pattern(Target target) { --> Line_4 $$ data = target.loadData(); [FD]
+Line_3 $$ byte[] data = null; --> Line_4 $$ data = target.loadData(); [FD]

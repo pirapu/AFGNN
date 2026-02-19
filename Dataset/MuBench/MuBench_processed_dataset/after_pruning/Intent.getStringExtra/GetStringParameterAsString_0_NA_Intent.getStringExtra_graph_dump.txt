@@ -1,0 +1,2 @@
+Line_3 $$ String pattern(Intent intent) { --> Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID); [CD]
+Line_3 $$ String pattern(Intent intent) { --> Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID); [FD]

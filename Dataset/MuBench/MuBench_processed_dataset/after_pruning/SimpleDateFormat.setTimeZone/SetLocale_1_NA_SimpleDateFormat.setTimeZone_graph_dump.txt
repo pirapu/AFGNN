@@ -1,0 +1,7 @@
+Line_2 $$ void pattern(String pattern, Date date, TimeZone GMT) { --> Line_3 $$ SimpleDateFormat formatter = new SimpleDateFormat(pattern); [FD]
+Line_2 $$ void pattern(String pattern, Date date, TimeZone GMT) { --> Line_4 $$ formatter.setTimeZone(GMT); [CD]
+Line_2 $$ void pattern(String pattern, Date date, TimeZone GMT) { --> Line_4 $$ formatter.setTimeZone(GMT); [FD]
+Line_3 $$ SimpleDateFormat formatter = new SimpleDateFormat(pattern); --> Line_4 $$ formatter.setTimeZone(GMT); [FD]
+Line_4 $$ formatter.setTimeZone(GMT); --> Line_5 $$ formatter.format(date); [SE]
+Line_3 $$ SimpleDateFormat formatter = new SimpleDateFormat(pattern); --> Line_5 $$ formatter.format(date); [FD]
+Line_2 $$ void pattern(String pattern, Date date, TimeZone GMT) { --> Line_5 $$ formatter.format(date); [FD]

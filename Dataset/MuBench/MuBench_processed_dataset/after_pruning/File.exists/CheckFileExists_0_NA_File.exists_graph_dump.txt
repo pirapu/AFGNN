@@ -1,0 +1,4 @@
+Line_2 $$ public void pattern(File file) throws IOException { --> Line_3 $$ if (file.exists()) { [CD]
+Line_2 $$ public void pattern(File file) throws IOException { --> Line_3 $$ if (file.exists()) { [FD]
+Line_3 $$ if (file.exists()) { --> Line_4 $$ try (FileInputStream fis = new FileInputStream(file)) { [CD]
+Line_2 $$ public void pattern(File file) throws IOException { --> Line_4 $$ try (FileInputStream fis = new FileInputStream(file)) { [FD]

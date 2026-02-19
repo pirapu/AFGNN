@@ -1,0 +1,2 @@
+Line_2 $$ byte[] pattern(byte b) throws IOException { --> Line_6 $$ return baos.toByteArray(); [CD]
+Line_3 $$ ByteArrayOutputStream baos = new ByteArrayOutputStream(); --> Line_6 $$ return baos.toByteArray(); [FD]

@@ -1,0 +1,8 @@
+Line_4 $$ try { --> Line_5 $$ param = params.getParameter(0); [CD]
+Line_3 $$ String param = null; --> Line_5 $$ param = params.getParameter(0); [FD]
+Line_2 $$ void pattern(Parameters params) { --> Line_5 $$ param = params.getParameter(0); [FD]
+Line_3 $$ String param = null; --> Line_7 $$ if (param == null) { [FD]
+Line_5 $$ param = params.getParameter(0); --> Line_7 $$ if (param == null) { [FD]
+Line_7 $$ if (param == null) { --> Line_9 $$ param.toLowerCase(); [CD]
+Line_3 $$ String param = null; --> Line_9 $$ param.toLowerCase(); [FD]
+Line_5 $$ param = params.getParameter(0); --> Line_9 $$ param.toLowerCase(); [FD]

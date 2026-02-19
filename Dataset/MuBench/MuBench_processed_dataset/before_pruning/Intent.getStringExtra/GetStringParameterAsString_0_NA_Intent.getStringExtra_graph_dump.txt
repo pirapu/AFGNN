@@ -1,0 +1,7 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ class GetStringParameterAsString {[ CD ]
+Line_2 $$ class GetStringParameterAsString {-->Line_3 $$ String pattern(Intent intent) {[ CD ]
+Line_3 $$ String pattern(Intent intent) {-->Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID);[ CD ]
+Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID);-->Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID);[ CD ]
+Line_3 $$ String pattern(Intent intent) {-->Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID);[ FD ]
+Line_3 $$ String pattern(Intent intent) {-->Line_4 $$ return intent.getStringExtra(UxArgument.SELECTED_ACCOUNT_UID);[ FD ]

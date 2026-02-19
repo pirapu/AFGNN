@@ -1,0 +1,2 @@
+Line_2 $$ public void pattern(JFrame f, Dimension d) { --> Line_3 $$ f.setVisible(true); [CD]
+Line_2 $$ public void pattern(JFrame f, Dimension d) { --> Line_3 $$ f.setVisible(true); [FD]

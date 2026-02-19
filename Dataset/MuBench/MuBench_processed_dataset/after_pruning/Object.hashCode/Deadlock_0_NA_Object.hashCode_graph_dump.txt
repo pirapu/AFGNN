@@ -1,0 +1,1 @@
+Line_2 $$ public void misuse(Object o) { --> Line_4 $$ o.hashCode(); [FD]

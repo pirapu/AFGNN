@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class example_2 {[ CD ]
+Line_1 $$ public class example_2 {-->Line_2 $$ public void openConnection(String url) {[ CD ]
+Line_2 $$ public void openConnection(String url) {-->Line_3 $$ HttpURLConnection urlConnection = null;[ CD ]
+Line_2 $$ public void openConnection(String url) {-->Line_4 $$ if (proxy != null)[ CD ]
+Line_4 $$ if (proxy != null)-->Line_4 $$ if (proxy != null)[ CD ]
+Line_4 $$ if (proxy != null)-->Line_5 $$ urlConnection = (HttpURLConnection) u.openConnection(proxy);[ CD ]
+Line_3 $$ HttpURLConnection urlConnection = null;-->Line_5 $$ urlConnection = (HttpURLConnection) u.openConnection(proxy);[ FD ]
+Line_5 $$ urlConnection = (HttpURLConnection) u.openConnection(proxy);-->Line_5 $$ urlConnection = (HttpURLConnection) u.openConnection(proxy);[ FD ]

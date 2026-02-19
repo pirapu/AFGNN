@@ -1,0 +1,4 @@
+Line_2 $$ public void pattern(ByteBuffer content, Path path) throws IOException { --> Line_3 $$ FileChannel out = FileChannel.open(path, StandardOpenOption.WRITE); [FD]
+Line_2 $$ public void pattern(ByteBuffer content, Path path) throws IOException { --> Line_4 $$ out.write(content); [CD]
+Line_2 $$ public void pattern(ByteBuffer content, Path path) throws IOException { --> Line_4 $$ out.write(content); [FD]
+Line_3 $$ FileChannel out = FileChannel.open(path, StandardOpenOption.WRITE); --> Line_4 $$ out.write(content); [FD]

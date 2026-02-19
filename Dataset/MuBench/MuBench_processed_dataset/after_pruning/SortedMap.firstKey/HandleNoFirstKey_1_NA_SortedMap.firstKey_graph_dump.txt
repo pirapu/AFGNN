@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(SortedMap fieldToReader) { --> Line_4 $$ field = (String) fieldToReader.firstKey(); [CD]
+Line_2 $$ void pattern(SortedMap fieldToReader) { --> Line_4 $$ field = (String) fieldToReader.firstKey(); [FD]
+Line_3 $$ String field; --> Line_4 $$ field = (String) fieldToReader.firstKey(); [FD]
+Line_3 $$ String field; --> Line_5 $$ if (field != null) { [FD]
+Line_4 $$ field = (String) fieldToReader.firstKey(); --> Line_5 $$ if (field != null) { [FD]

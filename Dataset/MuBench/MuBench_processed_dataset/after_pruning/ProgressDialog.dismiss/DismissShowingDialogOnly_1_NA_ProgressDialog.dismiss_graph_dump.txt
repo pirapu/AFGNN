@@ -1,0 +1,2 @@
+Line_2 $$ void pattern(ProgressDialog dialog) { --> Line_3 $$ dialog.dismiss(); [CD]
+Line_2 $$ void pattern(ProgressDialog dialog) { --> Line_3 $$ dialog.dismiss(); [FD]

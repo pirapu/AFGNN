@@ -1,0 +1,6 @@
+public void pattern(Object maybeNull) {
+
+    maybeNull.hashCode();
+  
+}
+

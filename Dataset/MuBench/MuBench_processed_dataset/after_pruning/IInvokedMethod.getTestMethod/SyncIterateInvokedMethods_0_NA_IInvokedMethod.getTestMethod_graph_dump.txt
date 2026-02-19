@@ -1,0 +1,4 @@
+Line_2 $$ ITestNGMethod pattern(ISuite suite) { --> Line_3 $$ Collection<IInvokedMethod> invokedMethods = suite.getAllInvokedMethods(); [FD]
+Line_3 $$ Collection<IInvokedMethod> invokedMethods = suite.getAllInvokedMethods(); --> Line_5 $$ for (IInvokedMethod iim : invokedMethods) { [FD]
+Line_5 $$ for (IInvokedMethod iim : invokedMethods) { --> Line_6 $$ ITestNGMethod tm = iim.getTestMethod(); [FD]
+Line_6 $$ ITestNGMethod tm = iim.getTestMethod(); --> Line_7 $$ return tm; [FD]

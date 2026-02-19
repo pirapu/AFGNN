@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(Target t) throws InterruptedException { --> Line_4 $$ while (t.isAvailable()) { [FD]
+Line_4 $$ while (t.isAvailable()) { --> Line_5 $$ t.wait(); [SE]
+Line_4 $$ while (t.isAvailable()) { --> Line_5 $$ t.wait(); [CD]
+Line_2 $$ void pattern(Target t) throws InterruptedException { --> Line_5 $$ t.wait(); [FD]

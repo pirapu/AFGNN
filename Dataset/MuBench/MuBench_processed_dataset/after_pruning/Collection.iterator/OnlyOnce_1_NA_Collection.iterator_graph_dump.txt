@@ -1,0 +1,2 @@
+Line_2 $$ void pattern(Collection<Object> objects) { --> Line_3 $$ objects.iterator().next(); [CD]
+Line_2 $$ void pattern(Collection<Object> objects) { --> Line_3 $$ objects.iterator().next(); [FD]

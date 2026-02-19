@@ -1,0 +1,4 @@
+Line_3 $$ String configFile = parameters.get(JCAManagedConnectionFactory.CONFIGFILE_KEY); --> Line_4 $$ String homeDir = parameters.get(JCAManagedConnectionFactory.HOMEDIR_KEY); [SE]
+Line_2 $$ void pattern() { --> Line_5 $$ RepositoryConfig.create(configFile, homeDir); [CD]
+Line_3 $$ String configFile = parameters.get(JCAManagedConnectionFactory.CONFIGFILE_KEY); --> Line_5 $$ RepositoryConfig.create(configFile, homeDir); [FD]
+Line_4 $$ String homeDir = parameters.get(JCAManagedConnectionFactory.HOMEDIR_KEY); --> Line_5 $$ RepositoryConfig.create(configFile, homeDir); [FD]

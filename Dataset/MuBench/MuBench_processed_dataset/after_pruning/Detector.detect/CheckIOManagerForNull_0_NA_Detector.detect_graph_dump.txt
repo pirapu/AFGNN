@@ -1,0 +1,5 @@
+Line_2 $$ void detect(IOManager ioManager, Metadata metadata) throws IOException { --> Line_3 $$ Detector detector = ioManager.getDetector(); [FD]
+Line_3 $$ Detector detector = ioManager.getDetector(); --> Line_4 $$ if (detector != null) { [FD]
+Line_4 $$ if (detector != null) { --> Line_5 $$ detector.detect(null, metadata); [CD]
+Line_3 $$ Detector detector = ioManager.getDetector(); --> Line_5 $$ detector.detect(null, metadata); [FD]
+Line_2 $$ void detect(IOManager ioManager, Metadata metadata) throws IOException { --> Line_5 $$ detector.detect(null, metadata); [FD]

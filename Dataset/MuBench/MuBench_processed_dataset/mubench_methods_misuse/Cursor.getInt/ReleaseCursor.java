@@ -1,0 +1,9 @@
+int pattern(SQLiteDatabase mDb, String TABLE, String[] STATE, String WHERE, String[] COND) {
+  Cursor c = mDb.query(TABLE, STATE, WHERE, COND, null, null, null);
+  if (c.getCount() < 1) {
+    c.close();
+    return 0; // empty indicator
+  }
+  c.moveToFirst();
+  return c.getInt(0);
+}

@@ -1,0 +1,5 @@
+Line_2 $$ public void pattern(List<String> l) { --> Line_3 $$ for (int i = 1; i <= l.size(); i++) { [FD]
+Line_3 $$ for (int i = 1; i <= l.size(); i++) { --> Line_4 $$ l.get(i - 1); [SE]
+Line_3 $$ for (int i = 1; i <= l.size(); i++) { --> Line_4 $$ l.get(i - 1); [CD]
+Line_3 $$ for (int i = 1; i <= l.size(); i++) { --> Line_4 $$ l.get(i - 1); [FD]
+Line_2 $$ public void pattern(List<String> l) { --> Line_4 $$ l.get(i - 1); [FD]

@@ -1,0 +1,2 @@
+Line_2 $$ String pattern(JsonElement d) { --> Line_3 $$ return d.getAsString(); [CD]
+Line_2 $$ String pattern(JsonElement d) { --> Line_3 $$ return d.getAsString(); [FD]

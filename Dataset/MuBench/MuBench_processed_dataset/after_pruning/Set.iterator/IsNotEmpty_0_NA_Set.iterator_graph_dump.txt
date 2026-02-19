@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(Set<Object> set) { --> Line_3 $$ if (!set.isEmpty()) { [FD]
+Line_3 $$ if (!set.isEmpty()) { --> Line_4 $$ set.iterator().next(); [SE]
+Line_3 $$ if (!set.isEmpty()) { --> Line_4 $$ set.iterator().next(); [CD]
+Line_2 $$ void pattern(Set<Object> set) { --> Line_4 $$ set.iterator().next(); [FD]

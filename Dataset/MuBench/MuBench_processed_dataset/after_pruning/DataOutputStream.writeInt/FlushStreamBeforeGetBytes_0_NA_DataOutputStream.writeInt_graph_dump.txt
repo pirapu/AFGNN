@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(OutputStream out) throws IOException { --> Line_3 $$ DataOutputStream dout = new DataOutputStream(out); [FD]
+Line_2 $$ void pattern(OutputStream out) throws IOException { --> Line_4 $$ dout.writeInt(0); [CD]
+Line_3 $$ DataOutputStream dout = new DataOutputStream(out); --> Line_4 $$ dout.writeInt(0); [FD]
+Line_4 $$ dout.writeInt(0); --> Line_5 $$ dout.flush(); [SE]
+Line_3 $$ DataOutputStream dout = new DataOutputStream(out); --> Line_5 $$ dout.flush(); [FD]

@@ -1,0 +1,6 @@
+Line_3 $$ int[] array = new int[] { 1, 2 }; --> Line_4 $$ IntStream stream = Arrays.stream(array); [FD]
+Line_2 $$ public void correctUsage() { --> Line_5 $$ stream.forEach(System.out::<>println); [CD]
+Line_4 $$ IntStream stream = Arrays.stream(array); --> Line_5 $$ stream.forEach(System.out::<>println); [FD]
+Line_2 $$ public void correctUsage() { --> Line_7 $$ stream.forEach(System.out::<>println); [CD]
+Line_5 $$ stream.forEach(System.out::<>println); --> Line_7 $$ stream.forEach(System.out::<>println); [SE]
+Line_4 $$ IntStream stream = Arrays.stream(array); --> Line_7 $$ stream.forEach(System.out::<>println); [FD]

@@ -1,0 +1,6 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ public Object misuse(Set<Object> set) {[ CD ]
+Line_2 $$ public Object misuse(Set<Object> set) {-->Line_3 $$ return set.iterator().next();[ CD ]
+Line_3 $$ return set.iterator().next();-->Line_3 $$ return set.iterator().next();[ CD ]
+Line_2 $$ public Object misuse(Set<Object> set) {-->Line_3 $$ return set.iterator().next();[ FD ]
+Line_2 $$ public Object misuse(Set<Object> set) {-->Line_3 $$ return set.iterator().next();[ FD ]

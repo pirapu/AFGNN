@@ -1,0 +1,7 @@
+Line_3 $$ Cipher c = Cipher.getInstance("AES"); --> Line_4 $$ c.init(Cipher.ENCRYPT_MODE, key); [FD]
+Line_2 $$ String pattern(Key key, String value) throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException { --> Line_4 $$ c.init(Cipher.ENCRYPT_MODE, key); [FD]
+Line_2 $$ String pattern(Key key, String value) throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException { --> Line_5 $$ byte[] result = c.doFinal(value.getBytes()); [CD]
+Line_2 $$ String pattern(Key key, String value) throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException, NoSuchAlgorithmException, NoSuchPaddingException, UnsupportedEncodingException { --> Line_5 $$ byte[] result = c.doFinal(value.getBytes()); [FD]
+Line_4 $$ c.init(Cipher.ENCRYPT_MODE, key); --> Line_5 $$ byte[] result = c.doFinal(value.getBytes()); [SE]
+Line_3 $$ Cipher c = Cipher.getInstance("AES"); --> Line_5 $$ byte[] result = c.doFinal(value.getBytes()); [FD]
+Line_5 $$ byte[] result = c.doFinal(value.getBytes()); --> Line_6 $$ return new String(result); [FD]

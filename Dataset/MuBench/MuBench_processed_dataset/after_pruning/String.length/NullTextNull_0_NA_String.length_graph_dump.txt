@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(Object obj) { --> Line_3 $$ String str = (obj == null ? this.getNullText() : obj.toString()); [FD]
+Line_3 $$ String str = (obj == null ? this.getNullText() : obj.toString()); --> Line_4 $$ if (str != null) { [FD]
+Line_4 $$ if (str != null) { --> Line_5 $$ str.length(); [CD]
+Line_3 $$ String str = (obj == null ? this.getNullText() : obj.toString()); --> Line_5 $$ str.length(); [FD]

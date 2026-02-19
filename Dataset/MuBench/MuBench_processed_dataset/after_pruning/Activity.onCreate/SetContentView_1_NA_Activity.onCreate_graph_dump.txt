@@ -1,0 +1,2 @@
+Line_2 $$ protected void onCreate(Bundle state) { --> Line_3 $$ super.onCreate(state); [CD]
+Line_2 $$ protected void onCreate(Bundle state) { --> Line_3 $$ super.onCreate(state); [FD]

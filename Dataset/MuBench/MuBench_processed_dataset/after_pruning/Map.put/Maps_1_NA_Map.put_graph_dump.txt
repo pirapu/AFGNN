@@ -1,0 +1,2 @@
+Line_2 $$ void mapMayContainNull(Map<String, Object> m) { --> Line_3 $$ m.put(result); [CD]
+Line_2 $$ void mapMayContainNull(Map<String, Object> m) { --> Line_3 $$ m.put(result); [FD]

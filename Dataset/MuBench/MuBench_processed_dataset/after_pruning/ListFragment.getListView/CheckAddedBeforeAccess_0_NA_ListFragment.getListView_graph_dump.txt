@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(ListFragment lf, int position) { --> Line_3 $$ if (lf.isAdded() && lf.getListView() != null) { [CD]
+Line_2 $$ void pattern(ListFragment lf, int position) { --> Line_3 $$ if (lf.isAdded() && lf.getListView() != null) { [FD]
+Line_3 $$ if (lf.isAdded() && lf.getListView() != null) { --> Line_4 $$ lf.getListView().setSelectionFromTop(position, 0); [SE]
+Line_3 $$ if (lf.isAdded() && lf.getListView() != null) { --> Line_4 $$ lf.getListView().setSelectionFromTop(position, 0); [CD]
+Line_2 $$ void pattern(ListFragment lf, int position) { --> Line_4 $$ lf.getListView().setSelectionFromTop(position, 0); [FD]

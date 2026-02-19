@@ -1,0 +1,5 @@
+Line_3 $$ Intent intent = new Intent(); --> Line_4 $$ intent.setAction(Intent.ACTION_VIEW); [FD]
+Line_2 $$ void pattern(File file) { --> Line_5 $$ intent.setDataAndType(Uri.fromFile(file), "image/jpg"); [CD]
+Line_2 $$ void pattern(File file) { --> Line_5 $$ intent.setDataAndType(Uri.fromFile(file), "image/jpg"); [FD]
+Line_4 $$ intent.setAction(Intent.ACTION_VIEW); --> Line_5 $$ intent.setDataAndType(Uri.fromFile(file), "image/jpg"); [SE]
+Line_3 $$ Intent intent = new Intent(); --> Line_5 $$ intent.setDataAndType(Uri.fromFile(file), "image/jpg"); [FD]

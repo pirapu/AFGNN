@@ -1,0 +1,6 @@
+Line_2 $$ public void pattern(Object o) { --> Line_3 $$ if (o == null) { [FD]
+Line_3 $$ if (o == null) { --> Line_4 $$ o = new Object(); [CD]
+Line_2 $$ public void pattern(Object o) { --> Line_4 $$ o = new Object(); [FD]
+Line_2 $$ public void pattern(Object o) { --> Line_6 $$ o.hashCode(); [CD]
+Line_2 $$ public void pattern(Object o) { --> Line_6 $$ o.hashCode(); [FD]
+Line_4 $$ o = new Object(); --> Line_6 $$ o.hashCode(); [FD]

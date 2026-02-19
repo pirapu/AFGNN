@@ -1,0 +1,2 @@
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) { --> Line_3 $$ String uri = storage.unregisterNamespace(prefix); [CD]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) { --> Line_3 $$ String uri = storage.unregisterNamespace(prefix); [FD]

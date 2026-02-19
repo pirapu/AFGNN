@@ -1,0 +1,2 @@
+Line_2 $$ void getParent() throws ItemNotFoundException, RepositoryException { --> Line_4 $$ parent.getNodeState(); [CD]
+Line_3 $$ NodeEntry parent = getHierarchyEntry().getParent(); --> Line_4 $$ parent.getNodeState(); [FD]

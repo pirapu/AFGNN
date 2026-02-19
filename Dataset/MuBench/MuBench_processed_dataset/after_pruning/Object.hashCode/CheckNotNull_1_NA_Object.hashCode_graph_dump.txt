@@ -1,0 +1,2 @@
+Line_2 $$ public void pattern(Object maybeNull) { --> Line_3 $$ maybeNull.hashCode(); [CD]
+Line_2 $$ public void pattern(Object maybeNull) { --> Line_3 $$ maybeNull.hashCode(); [FD]

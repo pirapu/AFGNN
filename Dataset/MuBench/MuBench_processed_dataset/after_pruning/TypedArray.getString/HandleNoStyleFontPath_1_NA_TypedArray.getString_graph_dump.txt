@@ -1,0 +1,3 @@
+Line_2 $$ String pattern(Context context, AttributeSet attrs, int attributeId) { --> Line_3 $$ TypedArray typedArray = context.obtainStyledAttributes(attrs, new int[] { attributeId }); [FD]
+Line_2 $$ String pattern(Context context, AttributeSet attrs, int attributeId) { --> Line_4 $$ return typedArray.getString(0); [CD]
+Line_3 $$ TypedArray typedArray = context.obtainStyledAttributes(attrs, new int[] { attributeId }); --> Line_4 $$ return typedArray.getString(0); [FD]

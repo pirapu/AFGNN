@@ -1,0 +1,10 @@
+public class func{
+public void pattern(Target target) {
+	byte[] data = null;
+	try {
+		data = target.loadData();
+	} catch (ParseException t) {
+		data = new byte[0];
+	}
+}
+}

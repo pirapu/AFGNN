@@ -1,0 +1,4 @@
+Line_2 $$ String pattern(Scanner scanner) { --> Line_3 $$ if (!scanner.hasNext()) { [FD]
+Line_2 $$ String pattern(Scanner scanner) { --> Line_6 $$ return scanner.next(); [CD]
+Line_2 $$ String pattern(Scanner scanner) { --> Line_6 $$ return scanner.next(); [FD]
+Line_3 $$ if (!scanner.hasNext()) { --> Line_6 $$ return scanner.next(); [SE]

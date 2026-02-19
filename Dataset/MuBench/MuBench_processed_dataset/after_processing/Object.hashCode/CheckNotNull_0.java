@@ -1,0 +1,7 @@
+public class func{
+public void pattern(Object maybeNull) {
+  if (maybeNull != null) {
+    maybeNull.hashCode();
+  }
+}
+}

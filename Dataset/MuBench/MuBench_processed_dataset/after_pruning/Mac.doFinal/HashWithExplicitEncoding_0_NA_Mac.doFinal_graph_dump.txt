@@ -1,0 +1,7 @@
+Line_2 $$ byte[] pattern(String callId, byte[] secretKey) { --> Line_3 $$ SecretKeySpec sks = new SecretKeySpec(secretKey, "HmacSHA1"); [FD]
+Line_4 $$ Mac mac = Mac.getInstance("HmacSHA1"); --> Line_5 $$ mac.init(sks); [FD]
+Line_3 $$ SecretKeySpec sks = new SecretKeySpec(secretKey, "HmacSHA1"); --> Line_5 $$ mac.init(sks); [FD]
+Line_2 $$ byte[] pattern(String callId, byte[] secretKey) { --> Line_6 $$ return mac.doFinal(callId.getBytes(UTF8)); [CD]
+Line_2 $$ byte[] pattern(String callId, byte[] secretKey) { --> Line_6 $$ return mac.doFinal(callId.getBytes(UTF8)); [FD]
+Line_5 $$ mac.init(sks); --> Line_6 $$ return mac.doFinal(callId.getBytes(UTF8)); [SE]
+Line_4 $$ Mac mac = Mac.getInstance("HmacSHA1"); --> Line_6 $$ return mac.doFinal(callId.getBytes(UTF8)); [FD]

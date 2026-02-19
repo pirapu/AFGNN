@@ -1,0 +1,2 @@
+Line_2 $$ void pattern(ListFragment lf, int position) { --> Line_3 $$ lf.getListView().setSelectionFromTop(position, 0); [CD]
+Line_2 $$ void pattern(ListFragment lf, int position) { --> Line_3 $$ lf.getListView().setSelectionFromTop(position, 0); [FD]

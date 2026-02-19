@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(HttpMethod method) throws AuthenticationException { --> Line_3 $$ AuthState authstate = method.getHostAuthState(); [FD]
+Line_3 $$ AuthState authstate = method.getHostAuthState(); --> Line_4 $$ if (authstate.isPreemptive()) { [FD]
+Line_4 $$ if (authstate.isPreemptive()) { --> Line_5 $$ authstate.invalidate(); [SE]
+Line_4 $$ if (authstate.isPreemptive()) { --> Line_5 $$ authstate.invalidate(); [CD]
+Line_3 $$ AuthState authstate = method.getHostAuthState(); --> Line_5 $$ authstate.invalidate(); [FD]

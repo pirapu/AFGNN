@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ public void missingFinally(File file) throws IOException {[ CD ]
+Line_2 $$ public void missingFinally(File file) throws IOException {-->Line_2 $$ IOException[ CD ]
+Line_2 $$ public void missingFinally(File file) throws IOException {-->Line_3 $$ Writer writer = new PrintWriter(new FileOutputStream(file));[ CD ]
+Line_2 $$ public void missingFinally(File file) throws IOException {-->Line_3 $$ Writer writer = new PrintWriter(new FileOutputStream(file));[ FD ]
+Line_2 $$ public void missingFinally(File file) throws IOException {-->Line_4 $$ writer.write("foo");[ CD ]
+Line_3 $$ Writer writer = new PrintWriter(new FileOutputStream(file));-->Line_4 $$ writer.write("foo");[ FD ]
+Line_3 $$ Writer writer = new PrintWriter(new FileOutputStream(file));-->Line_4 $$ writer.write("foo");[ FD ]

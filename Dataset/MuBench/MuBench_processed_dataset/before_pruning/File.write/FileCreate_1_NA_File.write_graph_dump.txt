@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {[ CD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_2 $$ IOException[ CD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_3 $$ Files.write(path, content);[ CD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_3 $$ Files.write(path, content);[ FD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_3 $$ Files.write(path, content);[ FD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_3 $$ Files.write(path, content);[ FD ]
+Line_2 $$ public void pattern(Path path, byte[] content) throws IOException {-->Line_3 $$ Files.write(path, content);[ FD ]

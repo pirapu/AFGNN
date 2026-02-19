@@ -1,0 +1,1 @@
+Line_2 $$ String pattern() { --> Line_3 $$ return Environment.getExternalStorageState(); [CD]

@@ -1,0 +1,2 @@
+Line_2 $$ public String getCarInsuranceNameFromPersonUsingFlatMap(Person person) { --> Line_3 $$ return ofNullable(person).flatMap(Person::<>getCar).flatMap(Car::<>getInsurance).map(Insurance::<>getName).orElse("Unknown"); [CD]
+Line_2 $$ public String getCarInsuranceNameFromPersonUsingFlatMap(Person person) { --> Line_3 $$ return ofNullable(person).flatMap(Person::<>getCar).flatMap(Car::<>getInsurance).map(Insurance::<>getName).orElse("Unknown"); [FD]

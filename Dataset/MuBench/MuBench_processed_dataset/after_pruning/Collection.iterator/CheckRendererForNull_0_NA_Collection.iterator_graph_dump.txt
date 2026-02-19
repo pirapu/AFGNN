@@ -1,0 +1,6 @@
+Line_2 $$ void pattern(XYDataset d, XYPlot plot) { --> Line_3 $$ XYItemRenderer r = plot.getRendererForDataset(d); [FD]
+Line_3 $$ XYItemRenderer r = plot.getRendererForDataset(d); --> Line_4 $$ if (r != null) { [FD]
+Line_4 $$ if (r != null) { --> Line_5 $$ Collection c = r.getAnnotations(); [CD]
+Line_3 $$ XYItemRenderer r = plot.getRendererForDataset(d); --> Line_5 $$ Collection c = r.getAnnotations(); [FD]
+Line_4 $$ if (r != null) { --> Line_6 $$ Iterator i = c.iterator(); [CD]
+Line_5 $$ Collection c = r.getAnnotations(); --> Line_6 $$ Iterator i = c.iterator(); [FD]

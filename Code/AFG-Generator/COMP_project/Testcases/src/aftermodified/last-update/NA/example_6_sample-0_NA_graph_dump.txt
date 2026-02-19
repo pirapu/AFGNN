@@ -1,0 +1,6 @@
+Line_0 $$ Entry-->Line_1 $$ public class example_6 {[ CD ]
+Line_1 $$ public class example_6 {-->Line_2 $$ public void db() {[ CD ]
+Line_2 $$ public void db() {-->Line_3 $$ table.createDiscrepancyTable(tableName);[ CD ]
+Line_2 $$ public void db() {-->Line_4 $$ dbLog(tableName);[ CD ]
+Line_2 $$ public void db() {-->Line_5 $$ table.call2(table2);[ CD ]
+Line_3 $$ table.createDiscrepancyTable(tableName);-->Line_5 $$ table.call2(table2);[ SE ]

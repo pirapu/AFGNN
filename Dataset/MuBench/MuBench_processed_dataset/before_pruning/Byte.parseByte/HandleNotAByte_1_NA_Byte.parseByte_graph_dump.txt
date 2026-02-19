@@ -1,0 +1,6 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ long pattern(String s) {[ CD ]
+Line_2 $$ long pattern(String s) {-->Line_3 $$ return Byte.parseByte(s);[ CD ]
+Line_3 $$ return Byte.parseByte(s);-->Line_3 $$ return Byte.parseByte(s);[ CD ]
+Line_2 $$ long pattern(String s) {-->Line_3 $$ return Byte.parseByte(s);[ FD ]
+Line_2 $$ long pattern(String s) {-->Line_3 $$ return Byte.parseByte(s);[ FD ]

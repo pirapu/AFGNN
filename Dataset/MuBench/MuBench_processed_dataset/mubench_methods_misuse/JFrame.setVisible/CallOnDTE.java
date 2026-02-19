@@ -1,0 +1,7 @@
+public static void main(String[] args) {
+JFrame f = new JFrame("Main Window");
+// add components
+ 
+f.setVisible(true);
+}
+

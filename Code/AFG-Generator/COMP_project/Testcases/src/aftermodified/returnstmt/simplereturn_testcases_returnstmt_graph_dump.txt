@@ -1,0 +1,5 @@
+Line_0 $$ Entry-->Line_1 $$ public class simplereturn [ CD ]
+Line_1 $$ public class simplereturn -->Line_2 $$ public void main(int a) [ CD ]
+Line_2 $$ public void main(int a) -->Line_3 $$ return a[ CD ]
+Line_2 $$ public void main(int a) -->Line_3 $$ return a[ CD ]
+Line_2 $$ public void main(int a) -->Line_3 $$ return a[ FD ]

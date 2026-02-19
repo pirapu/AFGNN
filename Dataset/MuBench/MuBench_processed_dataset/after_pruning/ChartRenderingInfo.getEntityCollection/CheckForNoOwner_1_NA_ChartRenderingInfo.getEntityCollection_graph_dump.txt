@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(PlotRenderingInfo plotState, AxisLabelEntity someEntity) { --> Line_3 $$ ChartRenderingInfo owner = plotState.getOwner(); [FD]
+Line_2 $$ void pattern(PlotRenderingInfo plotState, AxisLabelEntity someEntity) { --> Line_4 $$ EntityCollection entities = owner.getEntityCollection(); [CD]
+Line_3 $$ ChartRenderingInfo owner = plotState.getOwner(); --> Line_4 $$ EntityCollection entities = owner.getEntityCollection(); [FD]
+Line_4 $$ EntityCollection entities = owner.getEntityCollection(); --> Line_5 $$ entities.add(someEntity); [FD]
+Line_2 $$ void pattern(PlotRenderingInfo plotState, AxisLabelEntity someEntity) { --> Line_5 $$ entities.add(someEntity); [FD]

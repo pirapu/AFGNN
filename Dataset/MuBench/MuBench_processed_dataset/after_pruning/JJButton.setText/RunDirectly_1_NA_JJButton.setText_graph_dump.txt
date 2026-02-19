@@ -1,0 +1,5 @@
+Line_3 $$ JJButton button = new JButton(":some button:"); --> Line_4 $$ button.addActionListener(new ActionListener() { [FD]
+Line_4 $$ button.addActionListener(new ActionListener() { --> Line_6 $$ SwingUtilities.invokeLater(new Runnable() { [CD]
+Line_6 $$ SwingUtilities.invokeLater(new Runnable() { --> Line_8 $$ button.setText(":clicked:"); [CD]
+Line_4 $$ button.addActionListener(new ActionListener() { --> Line_8 $$ button.setText(":clicked:"); [SE]
+Line_3 $$ JJButton button = new JButton(":some button:"); --> Line_8 $$ button.setText(":clicked:"); [FD]

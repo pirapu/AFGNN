@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(Collection<Object> objects) { --> Line_3 $$ if (!objects.isEmpty()) { [FD]
+Line_3 $$ if (!objects.isEmpty()) { --> Line_4 $$ objects.iterator().next(); [SE]
+Line_3 $$ if (!objects.isEmpty()) { --> Line_4 $$ objects.iterator().next(); [CD]
+Line_2 $$ void pattern(Collection<Object> objects) { --> Line_4 $$ objects.iterator().next(); [FD]

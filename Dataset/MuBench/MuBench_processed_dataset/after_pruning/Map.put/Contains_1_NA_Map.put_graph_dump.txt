@@ -1,0 +1,2 @@
+Line_2 $$ public void pattern(Map<String, Object> m, String key, Object value) { --> Line_3 $$ m.put(key, value); [CD]
+Line_2 $$ public void pattern(Map<String, Object> m, String key, Object value) { --> Line_3 $$ m.put(key, value); [FD]

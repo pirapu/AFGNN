@@ -1,0 +1,5 @@
+Line_2 $$ void pattern(NodeState context, ItemStateManager ism) { --> Line_3 $$ NodeId parentId = context.getParentId(); [FD]
+Line_3 $$ NodeId parentId = context.getParentId(); --> Line_4 $$ if (parentId != null) { [FD]
+Line_4 $$ if (parentId != null) { --> Line_5 $$ ism.getItemState(parentId); [CD]
+Line_2 $$ void pattern(NodeState context, ItemStateManager ism) { --> Line_5 $$ ism.getItemState(parentId); [FD]
+Line_3 $$ NodeId parentId = context.getParentId(); --> Line_5 $$ ism.getItemState(parentId); [FD]

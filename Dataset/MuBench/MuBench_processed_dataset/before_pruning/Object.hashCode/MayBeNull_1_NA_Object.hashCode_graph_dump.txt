@@ -1,0 +1,5 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ public void misuse(Object maybeNull) {[ CD ]
+Line_2 $$ public void misuse(Object maybeNull) {-->Line_3 $$ maybeNull.hashCode();[ CD ]
+Line_2 $$ public void misuse(Object maybeNull) {-->Line_3 $$ maybeNull.hashCode();[ FD ]
+Line_2 $$ public void misuse(Object maybeNull) {-->Line_3 $$ maybeNull.hashCode();[ FD ]

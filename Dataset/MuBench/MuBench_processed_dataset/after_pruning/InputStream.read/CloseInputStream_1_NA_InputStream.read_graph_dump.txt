@@ -1,0 +1,4 @@
+Line_5 $$ try { --> Line_6 $$ while ((read = in.read(spoolBuffer)) > 0) { [CD]
+Line_4 $$ int read; --> Line_6 $$ while ((read = in.read(spoolBuffer)) > 0) { [FD]
+Line_2 $$ void pattern(InputStream in) throws IOException { --> Line_6 $$ while ((read = in.read(spoolBuffer)) > 0) { [FD]
+Line_3 $$ byte[] spoolBuffer = new byte[0x2000]; --> Line_6 $$ while ((read = in.read(spoolBuffer)) > 0) { [FD]

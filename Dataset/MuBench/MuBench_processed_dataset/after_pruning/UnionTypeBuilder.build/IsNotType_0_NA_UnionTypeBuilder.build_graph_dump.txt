@@ -1,0 +1,6 @@
+Line_2 $$ public JSType pattern(UnionTypeBuilder builder) { --> Line_3 $$ JSType result = builder.build(); [CD]
+Line_2 $$ public JSType pattern(UnionTypeBuilder builder) { --> Line_3 $$ JSType result = builder.build(); [FD]
+Line_3 $$ JSType result = builder.build(); --> Line_4 $$ if (!result.isNoType()) { [FD]
+Line_4 $$ if (!result.isNoType()) { --> Line_5 $$ return result; [CD]
+Line_3 $$ JSType result = builder.build(); --> Line_5 $$ return result; [FD]
+Line_4 $$ if (!result.isNoType()) { --> Line_7 $$ return null; [CD]

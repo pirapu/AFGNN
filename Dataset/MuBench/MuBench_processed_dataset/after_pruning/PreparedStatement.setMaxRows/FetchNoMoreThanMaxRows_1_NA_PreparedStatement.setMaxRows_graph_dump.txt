@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(PreparedStatement stmt) { --> Line_3 $$ stmt.setMaxRows(maxRows); [CD]
+Line_2 $$ void pattern(PreparedStatement stmt) { --> Line_3 $$ stmt.setMaxRows(maxRows); [FD]
+Line_3 $$ stmt.setMaxRows(maxRows); --> Line_6 $$ stmt.setFetchSize(fetchSize); [SE]
+Line_2 $$ void pattern(PreparedStatement stmt) { --> Line_6 $$ stmt.setFetchSize(fetchSize); [FD]

@@ -1,0 +1,2 @@
+Line_2 $$ long pattern(String s) { --> Line_3 $$ return Long.parseLong(s); [CD]
+Line_2 $$ long pattern(String s) { --> Line_3 $$ return Long.parseLong(s); [FD]

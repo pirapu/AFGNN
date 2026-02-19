@@ -1,0 +1,1 @@
+Line_2 $$ public void correctUsage() { --> Line_3 $$ IntStream.range(1, 5).forEach(System.out::<>println); [CD]

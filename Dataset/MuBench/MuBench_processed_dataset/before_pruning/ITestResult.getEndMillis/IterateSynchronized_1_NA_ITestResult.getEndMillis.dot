@@ -1,0 +1,34 @@
+digraph G {
+  Line_0;
+  Line_1;
+  Line_2;
+  Line_4;
+  Line_4;
+  Line_3;
+  Line_4;
+  Line_4;
+  Line_4;
+  Line_4;
+  Line_4;
+  Line_4;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_5;
+  Line_0 -> Line_1 [ label="CD" ];
+  Line_1 -> Line_2 [ label="CD" ];
+  Line_4 -> Line_4 [ label="CD" ];
+  Line_3 -> Line_4 [ label="FD" ];
+  Line_4 -> Line_4 [ label="SE" ];
+  Line_4 -> Line_5 [ label="SE" ];
+  Line_3 -> Line_5 [ label="FD" ];
+  Line_5 -> Line_5 [ label="SE" ];
+  Line_5 -> Line_5 [ label="SE" ];
+}

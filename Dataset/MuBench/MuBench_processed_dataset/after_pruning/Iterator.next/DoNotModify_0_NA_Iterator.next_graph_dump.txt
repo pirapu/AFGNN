@@ -1,0 +1,5 @@
+Line_2 $$ public void pattern(Collection<Object> c, Object element) { --> Line_3 $$ Iterator<Object> i = c.iterator(); [FD]
+Line_3 $$ Iterator<Object> i = c.iterator(); --> Line_4 $$ if (i.hasNext()) [FD]
+Line_4 $$ if (i.hasNext()) --> Line_5 $$ i.next(); [SE]
+Line_4 $$ if (i.hasNext()) --> Line_5 $$ i.next(); [CD]
+Line_3 $$ Iterator<Object> i = c.iterator(); --> Line_5 $$ i.next(); [FD]

@@ -1,0 +1,2 @@
+Line_3 $$ try { --> Line_4 $$ return Long.parseLong(s); [CD]
+Line_2 $$ long pattern(String s) { --> Line_4 $$ return Long.parseLong(s); [FD]

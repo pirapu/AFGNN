@@ -1,0 +1,8 @@
+Line_2 $$ void pattern(Line line, Line other) { --> Line_3 $$ Vector3D v1D = line.intersection(other); [FD]
+Line_2 $$ void pattern(Line line, Line other) { --> Line_4 $$ line.toSubSpace(v1D); [CD]
+Line_2 $$ void pattern(Line line, Line other) { --> Line_4 $$ line.toSubSpace(v1D); [FD]
+Line_3 $$ Vector3D v1D = line.intersection(other); --> Line_4 $$ line.toSubSpace(v1D); [SE]
+Line_3 $$ Vector3D v1D = line.intersection(other); --> Line_4 $$ line.toSubSpace(v1D); [FD]
+Line_2 $$ void pattern(Line line, Line other) { --> Line_5 $$ other.toSubSpace(v1D); [CD]
+Line_2 $$ void pattern(Line line, Line other) { --> Line_5 $$ other.toSubSpace(v1D); [FD]
+Line_3 $$ Vector3D v1D = line.intersection(other); --> Line_5 $$ other.toSubSpace(v1D); [FD]

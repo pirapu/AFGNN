@@ -1,0 +1,3 @@
+Line_2 $$ void pattern(File lockDir, String lockFilename) throws IOException { --> Line_3 $$ File lockFile = new File(lockDir, lockFilename); [FD]
+Line_2 $$ void pattern(File lockDir, String lockFilename) throws IOException { --> Line_4 $$ lockFile.createNewFile(); [CD]
+Line_3 $$ File lockFile = new File(lockDir, lockFilename); --> Line_4 $$ lockFile.createNewFile(); [FD]

@@ -1,0 +1,2 @@
+Line_2 $$ void pattern(Set<Object> set) { --> Line_3 $$ set.iterator().next(); [CD]
+Line_2 $$ void pattern(Set<Object> set) { --> Line_3 $$ set.iterator().next(); [FD]

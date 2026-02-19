@@ -1,0 +1,4 @@
+Line_2 $$ public void pattern(Object o) { --> Line_3 $$ o = new Object(); [FD]
+Line_2 $$ public void pattern(Object o) { --> Line_4 $$ o.hashCode(); [CD]
+Line_2 $$ public void pattern(Object o) { --> Line_4 $$ o.hashCode(); [FD]
+Line_3 $$ o = new Object(); --> Line_4 $$ o.hashCode(); [FD]

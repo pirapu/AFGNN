@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(Map foregroundDomainMarkers, int index, Marker marker) { --> Line_3 $$ ArrayList markers = (ArrayList) foregroundDomainMarkers.get(new Integer(index)); [FD]
+Line_2 $$ void pattern(Map foregroundDomainMarkers, int index, Marker marker) { --> Line_4 $$ markers.remove(marker); [CD]
+Line_2 $$ void pattern(Map foregroundDomainMarkers, int index, Marker marker) { --> Line_4 $$ markers.remove(marker); [FD]
+Line_3 $$ ArrayList markers = (ArrayList) foregroundDomainMarkers.get(new Integer(index)); --> Line_4 $$ markers.remove(marker); [FD]

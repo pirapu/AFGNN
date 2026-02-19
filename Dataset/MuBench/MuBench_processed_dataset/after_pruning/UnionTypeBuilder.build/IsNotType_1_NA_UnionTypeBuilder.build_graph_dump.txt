@@ -1,0 +1,3 @@
+Line_2 $$ public JSType pattern(UnionTypeBuilder builder) { --> Line_3 $$ JSType result = builder.build(); [CD]
+Line_2 $$ public JSType pattern(UnionTypeBuilder builder) { --> Line_3 $$ JSType result = builder.build(); [FD]
+Line_3 $$ JSType result = builder.build(); --> Line_4 $$ return result; [FD]

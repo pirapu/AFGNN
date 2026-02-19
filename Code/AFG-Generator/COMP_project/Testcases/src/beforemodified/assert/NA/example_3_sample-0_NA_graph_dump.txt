@@ -1,0 +1,4 @@
+Line_0 $$ Entry-->Line_1 $$ public class example_3 {[ CD ]
+Line_1 $$ public class example_3 {-->Line_2 $$ public static void main(string str) {[ CD ]
+Line_2 $$ public static void main(string str) {-->Line_3 $$ assert testAssert(str);[ FD ]
+Line_2 $$ public static void main(string str) {-->Line_3 $$ assert testAssert(str);[ FD ]

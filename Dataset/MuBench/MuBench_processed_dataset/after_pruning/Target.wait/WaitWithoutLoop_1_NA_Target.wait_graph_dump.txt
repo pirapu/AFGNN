@@ -1,0 +1,4 @@
+Line_2 $$ void misuse(Target t) throws InterruptedException { --> Line_4 $$ if (t.isAvailable()) { [FD]
+Line_4 $$ if (t.isAvailable()) { --> Line_5 $$ t.wait(); [SE]
+Line_4 $$ if (t.isAvailable()) { --> Line_5 $$ t.wait(); [CD]
+Line_2 $$ void misuse(Target t) throws InterruptedException { --> Line_5 $$ t.wait(); [FD]

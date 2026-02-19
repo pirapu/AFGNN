@@ -1,0 +1,3 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ public void correctUsage() {[ CD ]
+Line_2 $$ public void correctUsage() {-->Line_3 $$ IntStream.range(1, 5).forEach(System.out::<>println);[ CD ]

@@ -1,0 +1,4 @@
+Line_2 $$ void pattern(HashMap codeMap, Class exceptionClass) { --> Line_3 $$ Integer code = (Integer) codeMap.get(exceptionClass); [FD]
+Line_3 $$ Integer code = (Integer) codeMap.get(exceptionClass); --> Line_4 $$ if (code != null) { [FD]
+Line_4 $$ if (code != null) { --> Line_5 $$ code.intValue(); [CD]
+Line_3 $$ Integer code = (Integer) codeMap.get(exceptionClass); --> Line_5 $$ code.intValue(); [FD]

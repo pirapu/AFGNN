@@ -1,0 +1,5 @@
+Line_2 $$ public void misuse(Collection<Object> c) { --> Line_3 $$ Iterator<Object> i = c.iterator(); [FD]
+Line_3 $$ Iterator<Object> i = c.iterator(); --> Line_5 $$ if (i.hasNext()) [FD]
+Line_5 $$ if (i.hasNext()) --> Line_6 $$ i.next(); [SE]
+Line_5 $$ if (i.hasNext()) --> Line_6 $$ i.next(); [CD]
+Line_3 $$ Iterator<Object> i = c.iterator(); --> Line_6 $$ i.next(); [FD]

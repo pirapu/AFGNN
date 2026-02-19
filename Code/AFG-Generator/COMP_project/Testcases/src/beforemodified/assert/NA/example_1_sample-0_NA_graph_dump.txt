@@ -1,0 +1,6 @@
+Line_0 $$ Entry-->Line_1 $$ public class example_1 {[ CD ]
+Line_1 $$ public class example_1 {-->Line_2 $$ public static void main(String[] args) {[ CD ]
+Line_2 $$ public static void main(String[] args) {-->Line_3 $$ int x = 5;[ CD ]
+Line_3 $$ int x = 5;-->Line_4 $$ // This will pass since x is 5[ FD ]
+Line_4 $$ // This will pass since x is 5-->Line_4 $$ // This will pass since x is 5[ CD ]
+Line_3 $$ int x = 5;-->Line_4 $$ // This will pass since x is 5[ FD ]

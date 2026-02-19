@@ -1,0 +1,3 @@
+Line_2 $$ void pattern(StatisticalCategoryDataset dataset, int row, int column) { --> Line_3 $$ Number meanValue = dataset.getMeanValue(row, column); [FD]
+Line_2 $$ void pattern(StatisticalCategoryDataset dataset, int row, int column) { --> Line_4 $$ meanValue.doubleValue(); [CD]
+Line_3 $$ Number meanValue = dataset.getMeanValue(row, column); --> Line_4 $$ meanValue.doubleValue(); [FD]

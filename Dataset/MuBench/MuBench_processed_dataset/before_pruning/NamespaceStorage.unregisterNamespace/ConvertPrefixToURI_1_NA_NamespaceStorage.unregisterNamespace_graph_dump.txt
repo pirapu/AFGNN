@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {[ CD ]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ CD ]
+Line_3 $$ String uri = storage.unregisterNamespace(prefix);-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ CD ]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ FD ]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ FD ]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ FD ]
+Line_2 $$ void pattern(NamespaceStorage storage, String prefix) {-->Line_3 $$ String uri = storage.unregisterNamespace(prefix);[ FD ]

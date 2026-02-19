@@ -1,0 +1,4 @@
+Line_0 $$ Entry-->Line_1 $$ public class simple [ CD ]
+Line_1 $$ public class simple -->Line_3 $$ public void main(String[] args) [ CD ]
+Line_3 $$ public void main(String[] args) -->Line_4 $$ i = 0[ CD ]
+Line_3 $$ public void main(String[] args) -->Line_5 $$ System.out.println(i * i)[ CD ]

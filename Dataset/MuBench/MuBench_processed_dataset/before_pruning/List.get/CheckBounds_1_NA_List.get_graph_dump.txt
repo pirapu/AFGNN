@@ -1,0 +1,8 @@
+Line_0 $$ Entry-->Line_1 $$ public class func {[ CD ]
+Line_1 $$ public class func {-->Line_2 $$ Object size(List<Object> l, int i) {[ CD ]
+Line_2 $$ Object size(List<Object> l, int i) {-->Line_3 $$ return l.get(i);[ CD ]
+Line_3 $$ return l.get(i);-->Line_3 $$ return l.get(i);[ CD ]
+Line_2 $$ Object size(List<Object> l, int i) {-->Line_3 $$ return l.get(i);[ FD ]
+Line_2 $$ Object size(List<Object> l, int i) {-->Line_3 $$ return l.get(i);[ FD ]
+Line_2 $$ Object size(List<Object> l, int i) {-->Line_3 $$ return l.get(i);[ FD ]
+Line_2 $$ Object size(List<Object> l, int i) {-->Line_3 $$ return l.get(i);[ FD ]

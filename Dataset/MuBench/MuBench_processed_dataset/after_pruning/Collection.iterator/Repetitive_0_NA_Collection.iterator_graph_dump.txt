@@ -1,0 +1,4 @@
+Line_3 $$ String value = null; --> Line_5 $$ value = objects.iterator().next().toString(); [FD]
+Line_2 $$ public String misuse(Collection<Object> objects) { --> Line_5 $$ value = objects.iterator().next().toString(); [FD]
+Line_3 $$ String value = null; --> Line_7 $$ return value; [FD]
+Line_5 $$ value = objects.iterator().next().toString(); --> Line_7 $$ return value; [FD]
